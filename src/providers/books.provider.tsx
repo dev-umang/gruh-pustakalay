@@ -1,5 +1,5 @@
 import { onValue, ref } from "firebase/database";
-import React, { ReactNode, useEffect, useRef } from "react";
+import { ReactNode, useEffect, useRef } from "react";
 import { useSetRecoilState } from "recoil";
 import { RTDatabase } from "../common/config/firebase.config";
 import { NODES } from "../common/constants/nodes.constant";
@@ -26,7 +26,7 @@ const BooksProvider = ({ children }: Props) => {
         console.log(err);
       }
     );
-  }, []);
+  }, [setBooks]);
 
   return <>{children}</>;
 };

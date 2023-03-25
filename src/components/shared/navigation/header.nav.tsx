@@ -14,7 +14,7 @@ const NavHeader = ({ backTo }: Props) => {
             <FaArrowLeft />
           </Link>
         )}
-        <span>UMANG</span>
+        <strong>UK LIBRARY</strong>
       </div>
     </div>
   );

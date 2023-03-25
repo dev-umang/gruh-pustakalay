@@ -1,8 +1,4 @@
-import { get, ref } from "firebase/database";
-import { atom, selector } from "recoil";
-import { RTDatabase } from "../common/config/firebase.config";
-import { NODES } from "../common/constants/nodes.constant";
-import { showError } from "../common/helpers/message.helper";
+import { atom } from "recoil";
 import { BookDTO } from "../common/models/books.model";
 
 // const AllBooksSelector = selector<BookDTO[]>({

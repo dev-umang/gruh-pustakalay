@@ -8,11 +8,12 @@
     .dropValue {
       border: 1px solid #272a47;
       border-radius: 0.5rem;
-      padding: 0.5rem;
+      padding: 1rem 0.5rem;
+
       width: 100%;
       border-bottom-color: var(--bg-active-2);
-      background-color: #272a47;
-      min-height: 34px;
+      background-color: var(--bg-input);
+      min-height: 50px;
       outline: none;
       transition: 0.3s;
       color: white;
@@ -56,7 +57,7 @@
       text-align: left;
       width: 100%;
       border: none;
-      padding: 0.5rem;
+      padding: 1rem 0.5rem;
       background: transparent;
       border-bottom: 1px solid var(--border-dull);
       color: var(--text-primary);
