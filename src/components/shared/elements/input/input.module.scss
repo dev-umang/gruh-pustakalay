@@ -1,0 +1,38 @@
+.wrapper {
+  //   border: 1px solid green;
+  padding-top: 1rem;
+  .inputWrapper {
+    position: relative;
+    .input {
+      border: 1px solid var(--bg-input);
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      width: 100%;
+      border-bottom-color: var(--bg-active-2);
+      background-color: var(--bg-input);
+      outline: none;
+      transition: 0.3s;
+      color: white;
+      &:focus,
+      &:hover {
+        border-bottom-color: var(--bg-active);
+        & + .label {
+          color: var(--bg-active);
+        }
+      }
+    }
+    .label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: 0.3s;
+      position: absolute;
+      bottom: 100%;
+      left: 0.5rem;
+      color: var(--bg-active-2);
+    }
+  }
+}
+
+.input:focus + .label {
+  color: var(--bg-active);
+}

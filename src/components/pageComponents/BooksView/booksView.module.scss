@@ -1,0 +1,32 @@
+.bookCard {
+  //   border-radius: 0.5rem;
+  border: 1px solid #2b2c3b;
+  background: var(--bg-body-dark);
+  box-shadow: 2px 2px black;
+  margin: 0.5rem;
+  padding: 0.25rem;
+}
+
+.cardWrapper {
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.action {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: none;
+  margin-left: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &.delete {
+    background: red;
+  }
+  &.edit {
+    background: orange;
+  }
+}

@@ -1,0 +1,7 @@
+.layoutWrapper {
+  height: calc(100vh - var(--height-bottom-bar));
+  overflow: auto;
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  padding-bottom: var(--height-bottom-bar);
+}

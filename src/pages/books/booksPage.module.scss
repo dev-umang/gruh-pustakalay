@@ -1,0 +1,25 @@
+.addBookFormWrapper {
+  padding: 1rem;
+}
+
+.favBtn {
+  background: var(--bg-input);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+.saveBtn {
+  background: var(--bg-active-2);
+  color: black;
+  font-weight: 600;
+}
+
+.formFooter {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

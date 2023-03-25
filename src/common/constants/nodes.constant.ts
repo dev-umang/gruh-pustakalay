@@ -1,0 +1,5 @@
+export const NODES = {
+  SETTINGS: "SETTINGS",
+  BOOK_CATEGORIES: "BOOK_CATEGORIES",
+  BOOKS: "BOOKS",
+};

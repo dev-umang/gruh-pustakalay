@@ -1,0 +1,18 @@
+$size: 2.5rem;
+
+.btnWrapper {
+  position: fixed;
+  bottom: 4rem;
+  right: 1rem;
+  z-index: 1;
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: $size;
+    width: $size;
+    border-radius: 50%;
+    border: none;
+    background: var(--bg-active);
+  }
+}

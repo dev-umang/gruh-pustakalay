@@ -1,0 +1,87 @@
+.dropWrapper {
+  //   border: 1px solid green;
+  padding-top: 1rem;
+  position: relative;
+
+  .inputWrapper {
+    position: relative;
+    .dropValue {
+      border: 1px solid #272a47;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
+      width: 100%;
+      border-bottom-color: var(--bg-active-2);
+      background-color: #272a47;
+      min-height: 34px;
+      outline: none;
+      transition: 0.3s;
+      color: white;
+      text-align: left;
+      cursor: pointer;
+      &:focus,
+      &:hover {
+        border-bottom-color: var(--bg-active);
+        & + .label {
+          color: var(--bg-active);
+        }
+      }
+    }
+    .label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: 0.3s;
+      position: absolute;
+      bottom: 100%;
+      left: 0.5rem;
+      color: var(--bg-active-2);
+    }
+  }
+
+  .dropOptions {
+    position: absolute;
+    top: 105%;
+    left: 2px;
+    right: 2px;
+    border-radius: 0.5rem;
+    background: var(--bg-input);
+    // max-height: 0;
+    pointer-events: none;
+    opacity: 0;
+    overflow: auto;
+    box-shadow: 0 0 7px rgba(21, 15, 31, 0.71);
+    transition: 0.3s;
+    border-bottom: 1px solid var(--bg-active);
+    z-index: 2;
+    .optionBtn {
+      text-align: left;
+      width: 100%;
+      border: none;
+      padding: 0.5rem;
+      background: transparent;
+      border-bottom: 1px solid var(--border-dull);
+      color: var(--text-primary);
+      &:first-child {
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+      }
+      &:last-child {
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+      }
+      cursor: pointer;
+      &:hover {
+        background: var(--bg-body-dark);
+      }
+    }
+    &.show {
+      // max-height: 300px;
+
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
+
+.dropValue:focus + .label {
+  color: var(--bg-active);
+}
